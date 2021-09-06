@@ -2790,6 +2790,11 @@ select {
   color: rgba(100, 116, 139, var(--tw-text-opacity));
 }
 
+.hover\:text-blueGray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgba(51, 65, 85, var(--tw-text-opacity));
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3205,7 +3210,25 @@ select {
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+}
+
+.virec-image {
+  transform: scale(0.8) perspective(1040px) rotateY(5deg) rotate(-3deg) translate3d(0, 0, -100px);
+  filter: drop-shadow(0px 25px 50px #0004);
+}
+
+.virec-image:hover {
+  transform: none;
+  filter: drop-shadow(0px 0px 20px #e02021);
+}
+
+.drive-image {
+  transform: scale(1) perspective(1040px) rotateY(-20deg);
+}
+
+.drive-image:hover {
+  transform: none;
 }
 
 @media (min-width: 640px) {
