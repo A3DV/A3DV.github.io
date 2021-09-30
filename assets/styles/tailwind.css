@@ -3209,6 +3209,11 @@ select {
   }
 }
 
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
 html {
   scroll-behavior: smooth;
 }
